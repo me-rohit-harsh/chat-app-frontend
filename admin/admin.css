@@ -146,6 +146,15 @@
     padding-bottom: 60px;
     /* Adjust for the height of the input group */
 }
+.msg-box-body {
+  
+       position: relative;
+       background: linear-gradient(to top left, #ffffff, #27cced);
+       /* Adjust colors as needed */
+    
+
+}
+
 
 .chat-adminSide.input-group {
     /* position: fixed; */
