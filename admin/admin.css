@@ -1,6 +1,7 @@
 
 /* Styling the scrollbar */
 .live-chats {
+    padding-bottom: 25%;
     min-height: 100vh;
     overflow-y: auto;
     /* Change to auto to show scrollbar only when needed */
@@ -158,4 +159,27 @@
     /* Add a shadow effect */
 }
 
+  /* Custom scrollbar */
+  .msg-box-body::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  /* Track */
+  .msg-box-body::-webkit-scrollbar-track {
+      background: #FFFFFF;
+  }
+
+  /* Handle */
+  .msg-box-body::-webkit-scrollbar-thumb {
+      background: #E8E6E6;
+  }
+
+  /* Handle on hover */
+  .msg-box-body::-webkit-scrollbar-thumb:hover {
+      background: #E8E6E6;
+  }
+  .container-fluid{
+    max-height: 100vh;
+    overflow: hidden;
+  }
 /*  Admin right side css ends  */
