@@ -1,4 +1,3 @@
-
 /* Styling the scrollbar */
 .live-chats {
     padding-bottom: 25%;
@@ -34,14 +33,14 @@
 
 
 
- .live-chats .list-group-item {
-     transition: background-color 0.3s ease, transform 0.3s ease;
- }
+.live-chats .list-group-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
- .live-chats .list-group-item:hover {
-     background-color: #f8f9fa;
-     transform: translateY(-3px);
- }
+.live-chats .list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-3px);
+}
 
 
 /*  Admin right side css  starts*/
@@ -56,7 +55,7 @@
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .message-meta {
@@ -107,6 +106,7 @@
     float: right;
     font-size: 0.7rem;
 }
+
 /* Style for outgoing message */
 .message.outgoing {
     display: flex;
@@ -121,9 +121,9 @@
     /* White text color for outgoing message */
     border-radius: 15px;
     padding: 10px;
-    max-width: 70%;
+    max-width: 60%;
     /* Adjust the max-width as needed */
-    text-align: right;
+    text-align: left;
 }
 
 .message.outgoing .message-time {
@@ -131,6 +131,7 @@
     color: #ffffff;
     /* Color for message time */
 }
+
 .msg-box {
     height: 100vh;
     display: flex;
@@ -146,12 +147,13 @@
     padding-bottom: 60px;
     /* Adjust for the height of the input group */
 }
+
 .msg-box-body {
-  
-       position: relative;
-       background: linear-gradient(to top left, #ffffff, #27cced);
-       /* Adjust colors as needed */
-    
+
+    position: relative;
+    background: linear-gradient(to top left, #ffffff, #27cced);
+    /* Adjust colors as needed */
+
 
 }
 
@@ -168,27 +170,29 @@
     /* Add a shadow effect */
 }
 
-  /* Custom scrollbar */
-  .msg-box-body::-webkit-scrollbar {
-      width: 10px;
-  }
+/* Custom scrollbar */
+.msg-box-body::-webkit-scrollbar {
+    width: 10px;
+}
 
-  /* Track */
-  .msg-box-body::-webkit-scrollbar-track {
-      background: #FFFFFF;
-  }
+/* Track */
+.msg-box-body::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
 
-  /* Handle */
-  .msg-box-body::-webkit-scrollbar-thumb {
-      background: #E8E6E6;
-  }
+/* Handle */
+.msg-box-body::-webkit-scrollbar-thumb {
+    background: #E8E6E6;
+}
 
-  /* Handle on hover */
-  .msg-box-body::-webkit-scrollbar-thumb:hover {
-      background: #E8E6E6;
-  }
-  .container-fluid{
+/* Handle on hover */
+.msg-box-body::-webkit-scrollbar-thumb:hover {
+    background: #E8E6E6;
+}
+
+.container-fluid {
     max-height: 100vh;
     overflow: hidden;
-  }
+}
+
 /*  Admin right side css ends  */
