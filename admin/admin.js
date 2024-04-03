@@ -20,3 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for search input
     searchInput.addEventListener('input', filterChats);
 });
+
+// Function to scroll the chat container to the bottom
+function scrollChatToBottom() {
+    var chatContainer = document.getElementById("chatContainer");
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+// Call the scroll function when the page is loaded
+window.onload = function () {
+    scrollChatToBottom();
+};

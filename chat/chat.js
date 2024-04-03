@@ -29,3 +29,50 @@
             maximizeButton.innerHTML = isMaximized ? '<i class="fas fa-compress-alt"></i>' : '<i class="fas fa-expand-alt"></i>';
         });
     }); 
+
+
+    // Function to send a message from the user
+    function sendMessage() {
+        // Get user input from the form fields
+        var department = document.getElementById('department').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var convForm = document.getElementById('convForm');
+        var userInput = document.getElementById('userMessageInput');
+        convForm.style.display = 'none';
+        userInput.style.display='';
+
+
+        // Construct the message
+        var userMessage = `
+        <div class="message outgoing">
+            <div class="message-content">
+                <strong>User:</strong> ${message}
+            </div>
+        </div>
+    `;
+
+        // Append the user message to the chat box
+        document.getElementById('chatMessages').innerHTML += userMessage;
+
+        // Simulate admin reply (replace with actual backend logic)
+        var adminReply = `
+        <div class="message incoming">
+            <div class="message-content">
+                <strong>Admin:</strong> Thank you for your message. We will get back to you soon.
+            </div>
+        </div>
+    `;
+
+        // Append the admin reply to the chat box after a delay (simulating response time)
+        setTimeout(function () {
+            document.getElementById('chatMessages').innerHTML += adminReply;
+        }, 1000); // Adjust the delay as needed (in milliseconds)
+
+        }
+
+    // Add event listener to the form submit button to send the message
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+        sendMessage(); // Call the sendMessage function
+    });
